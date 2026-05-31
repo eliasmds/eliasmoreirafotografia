@@ -82,27 +82,6 @@ portfolioItems.forEach(item => {
     });
 });
 
-// ===== HERO ANIMATIONS ===== 
-window.addEventListener('load', () => {
-    const heroTitle = document.querySelector('.hero-title');
-    const heroSubtitle = document.querySelector('.hero-subtitle');
-    const heroButtons = document.querySelectorAll('.hero-buttons .btn');
-    
-    if (heroTitle) {
-        heroTitle.style.animation = 'slideUp 0.8s ease forwards';
-    }
-    
-    if (heroSubtitle) {
-        heroSubtitle.style.animation = 'slideUp 0.8s ease 0.2s forwards';
-        heroSubtitle.style.opacity = '0';
-    }
-    
-    heroButtons.forEach((btn, index) => {
-        btn.style.animation = `slideUp 0.8s ease ${0.4 + index * 0.1}s forwards`;
-        btn.style.opacity = '0';
-    });
-});
-
 // ===== ACTIVE NAVIGATION LINK ===== 
 window.addEventListener('scroll', () => {
     let current = '';
@@ -162,19 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Elias Moreira Fotografia - Website loaded successfully');
     
     // Você pode adicionar aqui integração com analytics ou outras funcionalidades
-});
-
-// ===== PREVENT MOBILE KEYBOARD FROM PUSHING CONTENT ===== 
-const originalHeight = window.innerHeight;
-
-window.addEventListener('resize', () => {
-    if (window.innerHeight < originalHeight) {
-        // Teclado aberto
-        document.body.style.overflow = 'hidden';
-    } else {
-        // Teclado fechado
-        document.body.style.overflow = 'auto';
-    }
 });
 
 // ===== BUTTON RIPPLE EFFECT ===== 
