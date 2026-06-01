@@ -134,7 +134,7 @@ section {
     overflow: hidden;
     text-align: center;
     color: #fff;
-    background-image: url('Imagens/BG.jpg');
+    background-image: url('Imagens/BG1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,6 +144,7 @@ section {
 .hero-background {
     position: absolute;
     inset: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(119, 8, 8, 0.56) 100%);
 }
 
 .hero-background::before {
